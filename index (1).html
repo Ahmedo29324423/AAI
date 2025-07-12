@@ -1,52 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welkom bij AhmetArcade</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #111;
-      color: #0ff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mijn Coole GitHub Website</title>
+<style>
+  /* Reset en basis */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  main .content {
+    max-width: 600px;
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  main .content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #ff3b2f;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
     }
-    h1 {
-      font-size: 3.5rem;
-      text-shadow: 0 0 10px #0ff;
-      margin-bottom: 0.3em;
+    main .content {
+      padding: 1rem;
     }
-    p {
-      font-size: 1.5rem;
-      max-width: 600px;
-      text-shadow: 0 0 5px #0ff;
+    button {
+      width: 100%;
     }
-    a {
-      margin-top: 1.5em;
-      color: #0ff;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid #0ff;
-      padding: 0.5em 1.2em;
-      border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    a:hover {
-      background-color: #0ff;
-      color: #111;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <h1>Welkom bij AhmetArcade</h1>
-  <p>Hier komen mijn games, projecten en nog veel meer. Blijf op de hoogte en ontdek binnenkort coole content!</p>
-  <a href="https://github.com/ahmetisik" target="_blank" rel="noopener noreferrer">Bekijk mijn GitHub</a>
+<header>
+  <h1>Welkom op mijn coole website!</h1>
+</header>
+<main>
+  <div class="content">
+    <p>Deze website is gemaakt met HTML en CSS, en ziet er nu wat strakker uit. Pas 'm aan en push je wijzigingen naar GitHub om live te zetten!</p>
+    <button onclick="alert('Bedankt voor het klikken!')">Klik hier</button>
+  </div>
+</main>
+<footer>
+  &copy; 2025 Jouw Naam
+</footer>
 </body>
 </html>
